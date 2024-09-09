@@ -9,6 +9,7 @@ env_path = Path(".") / ".env"
 load_dotenv(env_path)
 
 ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS_PROD").split(",")
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 
 DATABASES = {
